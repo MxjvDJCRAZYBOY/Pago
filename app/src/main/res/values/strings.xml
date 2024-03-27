@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Pago</string>
+    <string name="nombre_del_tarjetahabiente">Nombre del tarjetahabiente</string>
+</resources>
