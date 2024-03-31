@@ -5,83 +5,101 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".MainActivity">
 
     <Spinner
         android:id="@+id/spinnerCardType"
         android:layout_width="191dp"
         android:layout_height="48dp"
-        android:layout_marginTop="104dp"
         android:layout_marginEnd="16dp"
         android:entries="@array/card_type"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintHorizontal_bias="0.284"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.101" />
+        app:layout_constraintTop_toTopOf="@+id/textInputLayoutEmail"
+        app:layout_constraintVertical_bias="0.11"
+        tools:visibility="visible" />
 
     <EditText
         android:id="@+id/editTextName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="274dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
         android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZáéíóúÁÉÍÓÚñÑüÜäÄëËïÏöÖ "
-        android:hint="Nombre del tarjetahabiente"
+        android:hint="@string/nombre_del_titular"
         android:inputType="text"
         android:maxLength="50"
+        android:minHeight="48dp"
+        android:textColorHint="#78909C"
         android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/spinnerCardType" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCardType"
+        app:layout_constraintVertical_bias="0.074"
+        tools:visibility="visible" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutCardNumber"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:hint="Número de tarjeta"
+        android:layout_width="273dp"
+        android:layout_height="65dp"
+        android:hint="@string/numero_de_tarjeta1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.328">
+        app:layout_constraintTop_toBottomOf="@+id/editTextName"
+        app:layout_constraintVertical_bias="0.089"
+        tools:visibility="visible">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextCardNumber"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="36dp"
             android:digits="0123456789-"
-            android:hint="Número de tarjeta"
+            android:hint="@string/numero_de_tarjeta2"
             android:imeOptions="actionDone"
             android:inputType="number"
-            android:maxLength="19" />
-
+            android:maxLength="19"
+            android:textColorHint="#546E7A"
+            tools:ignore="TextContrastCheck"
+            tools:visibility="visible" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <EditText
         android:id="@+id/editTextCvv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="CVV"
+        android:autofillHints=""
+        android:hint="@string/cvv"
         android:inputType="numberPassword"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
         android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.708"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textInputLayoutCardNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutCardNumber"
+        app:layout_constraintVertical_bias="0.133"
+        tools:ignore="TextContrastCheck"
+        tools:visibility="visible" />
+
+    <!-- Imágenes de tarjetas por tipo -->
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:hint="Correo electrónico"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextCvv">
+        android:hint="@string/correo_electronico"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible">
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -89,49 +107,193 @@
         android:id="@+id/buttonPay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Pagar"
+        android:text="@string/pagar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.648" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCardType"
+        app:layout_constraintVertical_bias="0.944"
+        tools:visibility="visible" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editTextEmail"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:hint="Correo electrónico"
+        android:layout_width="272dp"
+        android:layout_height="48dp"
+        android:hint="@string/correo_electronico2"
         android:inputType="textEmailAddress"
         android:maxLength="50"
         android:minHeight="48dp"
+        android:textColorHint="#78909C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.132" />
+        app:layout_constraintVertical_bias="0.437"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageViewCardNormal"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/card"
+        android:src="@drawable/normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageViewVisa"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/visa"
+        android:src="@drawable/visa_logo"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageViewMastercard"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/mastercard"
+        android:src="@drawable/mastercard_logo"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageViewAmericanExpress"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/amex"
+        android:src="@drawable/amex_logo"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556"
+        tools:visibility="visible" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="20dp"
+        tools:visibility="gone" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="20dp"
+        tools:visibility="gone" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="top"
-        app:constraint_referenced_ids="spinnerCardType" />
+        app:constraint_referenced_ids="spinnerCardType"
+        tools:visibility="gone" />
 
+    <EditText
+        android:id="@+id/editTextExpirationMonth"
+        android:layout_width="54dp"
+        android:layout_height="59dp"
+        android:autofillHints=""
+        android:hint="@string/mes"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutCardNumber"
+        app:layout_constraintVertical_bias="0.104"
+        tools:ignore="TextContrastCheck"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editTextExpirationYear"
+        android:layout_width="54dp"
+        android:layout_height="59dp"
+        android:autofillHints=""
+        android:hint="@string/año"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextCvv"
+        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutCardNumber"
+        app:layout_constraintVertical_bias="0.104"
+        tools:ignore="TextContrastCheck"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/dividerLine"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="12dp"
+        android:text="@string/diagonal"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutCardNumber"
+        app:layout_constraintVertical_bias="0.143"
+        tools:ignore="TextSizeCheck"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/buttonCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openCartActivity"
+        android:text="@string/carrito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269"
+        tools:visibility="visible" />
 </androidx.constraintlayout.widget.ConstraintLayout>

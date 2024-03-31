@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="product_names">
+        <item>Producto 1</item>
+        <item>Producto 2</item>
+        <!-- Agrega más productos aquí -->
+    </array>
+
+    <array name="product_images">
+        <item>@drawable/product1</item>
+        <item>@drawable/product2</item>
+        <!-- Agrega más imágenes aquí -->
+    </array>
+
+    <array name="product_prices">
+        <item>10</item>
+        <item>20</item>
+        <!-- Agrega más precios aquí -->
+    </array>
+</resources>

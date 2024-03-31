@@ -1,4 +1,26 @@
 <resources>
     <string name="app_name">Pago</string>
     <string name="nombre_del_tarjetahabiente">Nombre del tarjetahabiente</string>
+    <string name="nombre_del_titular">Nombre del Titular</string>
+    <string name="numero_de_tarjeta1">Número de tarjeta</string>
+    <string name="numero_de_tarjeta2">Número de tarjeta</string>
+    <string name="cvv">CVV</string>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="pagar">Pagar</string>
+    <string name="correo_electronico2">Correo electrónico</string>
+    <string name="mes">MM</string>
+    <string name="año">YY</string>
+    <string name="diagonal">/</string>
+    <string name="carrito">Carrito</string>
+    <string name="product1">Product1</string>
+    <string name="product2">Product2</string>
+    <string name="product3">Product3</string>
+    <string name="correcto">correcto</string>
+    <string name="incorrecto">incorrecto</string>
+    <string name="incorrecto2">incorrecto2</string>
+    <string name="amex">amex</string>
+    <string name="card">card</string>
+    <string name="mastercard">mastercard</string>
+    <string name="visa">visa\n</string>
+    <string name="regresar">Regresar</string>
 </resources>
