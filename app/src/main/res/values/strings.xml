@@ -1,4 +1,60 @@
 <resources>
     <string name="app_name">Pago</string>
     <string name="nombre_del_tarjetahabiente">Nombre del tarjetahabiente</string>
+    <string name="nombre_del_titular">Nombre del Titular</string>
+    <string name="numero_de_tarjeta1">Número de tarjeta</string>
+    <string name="numero_de_tarjeta2">Número de tarjeta</string>
+    <string name="cvv">CVV</string>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="pagar">Pagar</string>
+    <string name="correo_electronico2">Correo electrónico</string>
+    <string name="mes">MM</string>
+    <string name="año">YY</string>
+    <string name="diagonal">/</string>
+    <string name="carrito">Carrito</string>
+    <string name="product1">Product1</string>
+    <string name="product2">Product2</string>
+    <string name="product3">Product3</string>
+    <string name="correcto">correcto</string>
+    <string name="incorrecto">incorrecto</string>
+    <string name="incorrecto2">incorrecto2</string>
+    <string name="amex">amex</string>
+    <string name="card">card</string>
+    <string name="mastercard">mastercard</string>
+    <string name="visa">visa\n</string>
+    <string name="regresar">Regresar</string>
+    <string name="todo">TODO</string>
+    <string name="pago_con_tarjeta">Pago con tarjeta</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="la_compra_se_realizo_de_forma_correcta_llegara_en_el_plazo_indicado_a_su_domicilio">La compra se realizo de forma correcta, llegara en el plazo indicado a su domicilio</string>
+    <string name="algun_dato_falto_por_llenar_favor_de_verificar">Algun dato falto por llenar, favor de verificar</string>
+    <string name="datos_erroneos_verifique_los_datos_ingresados">Datos erroneos. Verifique los datos ingresados</string>
+    <string name="la_tarjeta_ingresada_no_cuenta_con_los_fondos_suficientes_favor_de_intentar_con_otra">La tarjeta ingresada no cuenta con los fondos suficientes favor de intentar con otra</string>
+    <string name="transaccion_fallida_fondos_insuficientes">Transaccion fallida fondos insuficientes</string>
+    <string name="inicio">Inicio</string>
+    <string name="perfil">Perfil</string>
+    <string name="bienvenido2">Bienvenido</string>
+    <string name="Inicio2">Inicio</string>
+    <string name="perfil2">perfil</string>
+    <string name="v_1_00">V 1.00</string>
+    <string name="total_price_format">Total: $%s</string>
+    <string name="card_number_error_message">Formato de tarjeta incorrecto</string>
+    <string name="product_name_1">Controlador Launchpad</string>
+    <string name="product_name_2">Galaxy Watch 4</string>
+    <string name="product_name_3">Lentes De Sol Hawkers</string>
+    <string name="product_name_4">Ventilador de pared</string>
+    <string name="product_name_5">Funlab Firefly Control Pro</string>
+    <string name="product_name_6">Xiaomi Poco C65</string>
+    <string name="product_name_7">Cargador Xiaomi 33w</string>
+    <string name="product_name_8">Lego Ferrari</string>
+    <string name="product_name_9">Mouse inalámbrico</string>
+    <string name="product_name_10">Juego De Mesa Basta</string>
+    <string-array name="card_types">
+        <item>Selecciona un tipo de tarjeta</item>
+        <item>Visa</item>
+        <item>MasterCard</item>
+        <item>American Express</item>
+    </string-array>
+    <string name="email_error_message">Formato de correo electónico incorrecto</string>
+    <string name="transaction_message">La transacción se llevó a cabo con el número de tarjeta %1$s y el pago total fue de $%2$s a nombre de %3$s</string>
 </resources>

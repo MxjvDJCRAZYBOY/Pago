@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pay</string>
+    <string name="nombre_del_tarjetahabiente">"Cardholder name "</string>
+    <string name="nombre_del_titular">"Name of owner "</string>
+    <string name="numero_de_tarjeta1">"Card number "</string>
+    <string name="numero_de_tarjeta2">"Card number "</string>
+    <string name="cvv">CVV</string>
+    <string name="correo_electronico">E-MAIL</string>
+    <string name="pagar">PAY</string>
+    <string name="correo_electronico2">E-MAIL</string>
+    <string name="mes">MM</string>
+    <string name="año">YY</string>
+    <string name="diagonal">/</string>
+    <string name="carrito">CART</string>
+    <string name="product1">Product1</string>
+    <string name="product2">Product2</string>
+    <string name="product3">Product3</string>
+    <string name="correcto">Correct</string>
+    <string name="incorrecto">Incorrect</string>
+    <string name="incorrecto2">Incorrect2</string>
+    <string name="amex">Amex</string>
+    <string name="card">Card</string>
+    <string name="mastercard">MasterCard</string>
+    <string name="visa">Visa</string>
+    <string name="regresar">Go back</string>
+    <string name="todo">All</string>
+    <string name="pago_con_tarjeta">"payment by card "</string>
+    <string name="bienvenido">Welcome</string>
+    <string name="la_compra_se_realizo_de_forma_correcta_llegara_en_el_plazo_indicado_a_su_domicilio">"The purchase was made correctly, it will arrive at your home within the indicated period "</string>
+    <string name="algun_dato_falto_por_llenar_favor_de_verificar">Any information missing to fill out, please verify</string>
+    <string name="datos_erroneos_verifique_los_datos_ingresados">Wrong data. Check the data entered</string>
+    <string name="la_tarjeta_ingresada_no_cuenta_con_los_fondos_suficientes_favor_de_intentar_con_otra">The card entered does not have enough funds, please try another</string>
+    <string name="transaccion_fallida_fondos_insuficientes">Failed transaction insufficient funds</string>
+    <string name="inicio">Menu</string>
+    <string name="perfil">Profile</string>
+    <string name="bienvenido2">Welcome</string>
+    <string name="Inicio2">Menu</string>
+    <string name="perfil2">Profile</string>
+    <string name="v_1_00">V 1.00</string>
+    <string name="total_price_format">Total: $%s</string>
+    <string name="card_number_error_message">Invalid card format</string>
+    <string name="product_name_1">Launchpad Controller</string>
+    <string name="product_name_2">Galaxy Watch 4</string>
+    <string name="product_name_3">Hawkers Sunglasses</string>
+    <string name="product_name_4">Wall Fan</string>
+    <string name="product_name_5">Funlab Firefly Control Pro</string>
+    <string name="product_name_6">Xiaomi Poco C65</string>
+    <string name="product_name_7">Xiaomi 33w Charger</string>
+    <string name="product_name_8">Lego Ferrari</string>
+    <string name="product_name_9">Wireless Mouse</string>
+    <string name="product_name_10">Basta Board Game</string>
+    <string-array name="card_types">
+        <item>Select a card type</item>
+        <item>Visa</item>
+        <item>MasterCard</item>
+        <item>American Express</item>
+    </string-array>
+    <string name="email_error_message">Invalid email format</string>
+    <string name="transaction_message">The transaction was made with card number %1$s and the total payment was $%2$s in the name of %3$s</string>
+</resources>
